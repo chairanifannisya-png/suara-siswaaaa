@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Suara Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+<header class="header">
+    <div class="container navbar">
+
+        <a href="index.html" class="brand">
+            <svg class="logo" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" fill="white"/>
+                <circle cx="50" cy="50" r="42" fill="#2563eb"/>
+                <path d="M25 29Q25 24 32 24H68Q75 24 75 31V58Q75 65 68 65H48L34 77V65H32Q25 65 25 58Z" fill="white"/>
+                <path d="M38 40H62M38 49H57" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="68" cy="70" r="12" fill="#facc15"/>
+                <path d="M63 70L67 74L74 66" fill="none" stroke="#102b55" stroke-width="3"/>
+            </svg>
+
+            <div>
+                <h2>SUARA SISWA</h2>
+                <small>Halaman Administrator</small>
+            </div>
+        </a>
+
+        <a href="index.html" class="back-link">
+            ← Kembali ke Beranda
+        </a>
+
+    </div>
+</header>
+
+<main class="container admin-container">
+
+    <!-- LOGIN ADMIN -->
+    <section id="loginAdmin" class="login-card">
+
+        <div class="admin-icon">🔐</div>
+
+        <h2>Login Administrator</h2>
+
+        <p>Masukkan password admin untuk melanjutkan.</p>
+
+        <form id="loginForm">
+
+            <label for="passwordAdmin">
+                Password Admin
+            </label>
+
+            <input
+                type="password"
+                id="passwordAdmin"
+                placeholder="Masukkan password"
+                required
+            >
+
+            <button type="submit" class="btn-primary">
+                Login Admin
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </form>
+    </section>
+
+    <!-- DASHBOARD ADMIN -->
+    <section id="dashboardAdmin" hidden>
+
+        <div class="admin-welcome">
+            <div>
+                <span class="admin-label">
+                    DASHBOARD ADMIN
+                </span>
+
+                <h1>Kelola Laporan Siswa</h1>
+
+                <p>Selamat datang, Administrator!</p>
+            </div>
+
+            <button id="logoutAdmin" class="btn-logout">
+                Keluar
+            </button>
+        </div>
+
+        <!-- STATISTIK ADMIN -->
+        <div class="statistics admin-statistics">
+
+            <div class="stat-card">
+                <span>📨</span>
+                <h2 id="adminTotal">0</h2>
+                <p>Total Laporan</p>
+            </div>
+
+            <div class="stat-card">
+                <span>⏳</span>
+                <h2 id="adminMenunggu">0</h2>
+                <p>Menunggu</p>
+            </div>
+
+            <div class="stat-card">
+                <span>⚙️</span>
+                <h2 id="adminProses">0</h2>
+                <p>Diproses</p>
+            </div>
+
+            <div class="stat-card">
+                <span>✅</span>
+                <h2 id="adminSelesai">0</h2>
+                <p>Selesai</p>
+            </div>
+
+        </div>
+
+        <!-- DAFTAR LAPORAN -->
+        <div class="admin-history">
+
+            <div class="admin-history-top">
+                <div>
+                    <h2>Semua Laporan Siswa</h2>
+                    <p>Periksa dan kelola aspirasi yang masuk.</p>
+                </div>
+
+                <button id="deleteAll" class="btn-delete">
+                    🗑 Hapus Semua
+                </button>
+            </div>
+
+            <div id="adminHistoryList"></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <h2>SUARA SISWA</h2>
+        <p>Panel Administrator © 2026</p>
+    </div>
+</footer>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
