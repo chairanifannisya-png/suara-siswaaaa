@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suara Siswa - Pengaduan & Aspirasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="#" class="brand">
+            <!-- LOGO SVG -->
+            <svg class="logo" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" fill="white"/>
+                <circle cx="50" cy="50" r="42" fill="#2563eb"/>
+                <path d="M25 29 Q25 24 32 24 H68 Q75 24 75 31 V58 Q75 65 68 65 H48 L34 77 V65 H32 Q25 65 25 58Z" fill="white"/>
+                <path d="M38 40H62 M38 49H57" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="68" cy="70" r="12" fill="#facc15"/>
+                <path d="M63 70L67 74L74 66" fill="none" stroke="#102b55" stroke-width="3"/>
+            </svg>
+
+            <div>
+                <h2>SUARA SISWA</h2>
+                <small>Pengaduan & Aspirasi</small>
+            </div>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav id="navigation">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#pengaduan">Buat Laporan</a>
+            <a href="#riwayat">Riwayat</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </div>
+</header>
+
+<!-- BERANDA -->
+<section class="hero" id="beranda">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="label">PLATFORM SUARA SISWA</span>
+
+            <h1>
+                Suarakan Pendapatmu,
+                <span>Wujudkan Sekolah Lebih Baik!</span>
+            </h1>
+
+            <p>
+                Sampaikan pengaduan, kritik, dan aspirasi
+                secara mudah melalui satu platform.
+                Setiap suara siswa berarti untuk menciptakan
+                lingkungan sekolah yang nyaman.
+            </p>
+
+            <a href="#pengaduan" class="btn-primary">
+                Sampaikan Aspirasi →
+            </a>
+        </div>
+
+        <div class="hero-card">
+            <div class="illustration">💬</div>
+            <h3>Suaramu Penting!</h3>
+            <p>
+                Berani menyampaikan, bersama menciptakan perubahan.
+            </p>
+            <div class="mini-icons">
+                <span>📢 Aspirasi</span>
+                <span>📝 Pengaduan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATISTIK -->
+<section class="statistics container">
+    <div class="stat-card">
+        <span>📨</span>
+        <h2 id="totalLaporan">0</h2>
+        <p>Total Laporan</p>
+    </div>
+
+    <div class="stat-card">
+        <span>⏳</span>
+        <h2 id="totalMenunggu">0</h2>
+        <p>Menunggu</p>
+    </div>
+
+    <div class="stat-card">
+        <span>⚙️</span>
+        <h2 id="totalProses">0</h2>
+        <p>Diproses</p>
+    </div>
+
+    <div class="stat-card">
+        <span>✅</span>
+        <h2 id="totalSelesai">0</h2>
+        <p>Selesai</p>
+    </div>
+</section>
+
+<!-- TENTANG -->
+<section class="section" id="tentang">
+    <div class="container">
+        <div class="section-heading">
+            <span>TENTANG KAMI</span>
+            <h2>Apa Itu Suara Siswa?</h2>
+            <p>
+                Suara Siswa adalah platform digital yang membantu
+                siswa menyampaikan pengaduan, kritik, dan saran
+                demi meningkatkan kualitas lingkungan sekolah.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-box">
+                <span>🎯</span>
+                <h3>Tujuan</h3>
+                <p>Menciptakan komunikasi yang baik antara siswa dan pihak sekolah.</p>
+            </div>
+
+            <div class="about-box">
+                <span>🤝</span>
+                <h3>Manfaat</h3>
+                <p>Memudahkan siswa menyampaikan pendapat dan permasalahan.</p>
+            </div>
+
+            <div class="about-box">
+                <span>🔒</span>
+                <h3>Kerahasiaan</h3>
+                <p>Informasi laporan dikelola dengan bijak dan bertanggung jawab.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section services" id="layanan">
+    <div class="container">
+        <div class="section-heading">
+            <span>LAYANAN KAMI</span>
+            <h2>Pilih Layanan</h2>
+            <p>Gunakan layanan sesuai kebutuhanmu.</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <span>📢</span>
+                <h3>Pengaduan</h3>
+                <p>Sampaikan masalah atau kejadian yang membutuhkan perhatian.</p>
+                <a href="#pengaduan">Buat Pengaduan →</a>
+            </div>
+
+            <div class="service-card">
+                <span>💡</span>
+                <h3>Aspirasi</h3>
+                <p>Berikan ide, kritik, dan saran untuk kemajuan sekolah.</p>
+                <a href="#pengaduan">Kirim Aspirasi →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORM PENGADUAN -->
+<section class="section report-section" id="pengaduan">
+    <div class="container">
+        <div class="section-heading">
+            <span>FORMULIR DIGITAL</span>
+            <h2>Sampaikan Suaramu</h2>
+            <p>Isi formulir berikut dengan informasi yang benar.</p>
+        </div>
+
+        <form id="reportForm" class="report-form">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Nama Siswa</label>
+                    <input type="text" id="nama"
+                        placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Kelas</label>
+                    <input type="text" id="kelas"
+                        placeholder="Contoh: XI RPL 1" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Laporan</label>
+                <select id="jenis" required>
+                    <option value="">Pilih jenis laporan</option>
+                    <option>Pengaduan</option>
+                    <option>Aspirasi</option>
+                    <option>Kritik dan Saran</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Kategori</label>
+                <select id="kategori" required>
+                    <option value="">Pilih kategori</option>
+                    <option>Fasilitas Sekolah</option>
+                    <option>Kebersihan</option>
+                    <option>Pembelajaran</option>
+                    <option>Kedisiplinan</option>
+                    <option>Lingkungan Sekolah</option>
+                    <option>Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Judul Laporan</label>
+                <input type="text" id="judul"
+                    placeholder="Masukkan judul laporan" required>
+            </div>
+
+            <div class="form-group">
+                <label>Lokasi Kejadian</label>
+                <input type="text" id="lokasi"
+                    placeholder="Contoh: Ruang kelas">
+            </div>
+
+            <div class="form-group">
+                <label>Isi Pengaduan / Aspirasi</label>
+                <textarea id="isi" rows="5"
+                    placeholder="Jelaskan pengaduan atau aspirasi kamu..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary submit-btn">
+                Kirim Laporan →
+            </button>
+
+            <p id="formMessage" class="form-note"></p>
+        </form>
+    </div>
+</section>
+
+<!-- RIWAYAT -->
+<section class="section" id="riwayat">
+    <div class="container">
+        <div class="section-heading">
+            <span>DATA LAPORAN</span>
+            <h2>Riwayat Laporan</h2>
+            <p>Lihat status laporan yang sudah dikirim.</p>
+        </div>
+
+        <div class="history-wrapper">
+            <h3>Daftar Laporan</h3>
+            <div id="historyList"></div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div>
+            <h2>SUARA SISWA</h2>
+            <p>Satu suara untuk perubahan yang lebih baik.</p>
+        </div>
+        <p>© 2026 Suara Siswa. Project Kelompok Web Mobile.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
